@@ -1,0 +1,20 @@
+
+
+pip install Pillow
+pip install tensorflow-gpu
+
+
+
+
+
+источники: 
+
+http://qaru.site/questions/1262103/tensorflow-doesnt-seem-to-see-my-gpu
+
+
+http://qaru.site/questions/6680928/how-to-set-specific-gpu-in-tensorflow
+https://www.tensorflow.org/guide/gpu
+https://stackoverflow.com/questions/40690598/can-keras-with-tensorflow-backend-be-forced-to-use-cpu-or-gpu-at-will
+
+
+https://habr.com/ru/post/456740/
