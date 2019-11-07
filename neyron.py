@@ -29,13 +29,13 @@ logger.setLevel(logging.ERROR)
 # In[53]:
 
 
-zip_dir_base = './datasets'
+zip_dir_base = 'datasets/'
 
 
 # In[56]:
 
 
-base_dir = os.path.join(os.path.dirname(zip_dir), 'faces')
+base_dir = os.path.join(os.path.dirname(zip_dir_base), 'faces')
 
 
 train_dir = os.path.join(base_dir, 'train')
@@ -172,7 +172,7 @@ model.summary()
 # In[41]:
 
 
-EPOCHS = 15
+EPOCHS = 2
 with tf.device('/gpu:0'):
     history = model.fit_generator(
         train_data_gen,
@@ -186,8 +186,8 @@ with tf.device('/gpu:0'):
 # In[42]:
 
 
-acc = history.history['accuracy']
-val_acc = history.history['val_accuracy']
+acc = history.history['acc']
+val_acc = history.history['val_acc']
 
 loss = history.history['loss']
 val_loss = history.history['val_loss']
